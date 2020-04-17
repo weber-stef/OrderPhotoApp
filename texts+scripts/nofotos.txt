@@ -1,0 +1,8 @@
+./entry.txt
+./files.txt
+./fotos.txt
+./info-on-IMG_20190503_183052913.txt
+./lighttpd.conf
+./nofotos.txt
+./OrderPhotoCommandLineApp.txt
+./stathelp.txt

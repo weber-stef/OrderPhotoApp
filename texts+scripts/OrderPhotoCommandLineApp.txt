@@ -1,0 +1,24 @@
+# gieb alle Daten in Bezug auf stat IMG_20190503_183052913.jpg aus
+stat IMG_20190503_183052913.jpg
+#ergiebt
+
+#File: IMG_20190503_183052913.jpg
+#Size: 3530260   	Blocks: 6896       IO Block: 4096   regular file
+#Device: 30h/48d	Inode: 8254        Links: 1
+#Access: (0770/-rwxrwx---)  Uid: (    0/    root)   Gid: (  999/  vboxsf)
+#Access: 2020-04-17 04:56:23.447388000 +0200
+#Modify: 2019-05-03 18:30:56.000000000 +0200
+#Change: 2020-04-17 04:56:23.622910300 +0200
+# Birth: -
+
+# -c  --format=FORMAT , %y   time of last data modification, human-readable
+stat -c '%y' IMG_20190503_183052913.jpg
+# = 2019-05-03 18:30:56.000000000 +0200
+
+#'%.10y' gibt davon nur die ersten 10 Zeichen aus, das erstellungsdatum ohne weitere Zeitangaben
+stat -c '%.10y' IMG_20190503_183052913.jpg
+# = 2019-05-03
+
+stat -c '%.n entstand am %.10y' IMG_20190503_183052913.jpg
+# ergibt IMG_20190503_183052913.jpg entstand am 2019-05-03
+
